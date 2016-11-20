@@ -1,5 +1,5 @@
 title: Cowboy development and toxic management processes
-date: 2016-11-20 18:34:05
+date: 2016-11-20 20:46:05
 tags:
  - rant
 categories:
