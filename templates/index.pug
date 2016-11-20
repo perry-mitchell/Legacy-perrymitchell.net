@@ -1,0 +1,16 @@
+extends base.pug
+
+block title
+    title #{page_title}
+
+block body
+    section
+        for year in years
+            h3 #{year.yearNo} ¬
+            ul
+                for post in year.posts
+                    li
+                        div(class="post-date")
+                            span #{post.dateStr}
+                        div(class="title")
+                            a(href=post.link) !{post.title}

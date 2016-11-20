@@ -1,0 +1,23 @@
+extends base.pug
+
+block head
+    meta(name="twitter:card", content="summary")
+    meta(name="twitter:site", content="@perry_mitchell")
+    meta(name="twitter:creator", content="@perry_mitchell")
+    meta(name="twitter:title", content=title)
+    meta(property="og:type", content="blog")
+    meta(property="og:title", content=title)
+    //meta(property="og:url" content=url)
+    meta(name="description", content=description)
+    meta(name="twitter:description", content=description)
+
+block title
+    title #{page_title}
+
+block body
+    article
+        div.center
+            h1 #{title}
+            time #{date}
+        div.divider
+        div !{content}

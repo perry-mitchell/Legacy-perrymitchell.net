@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+
+    head
+        meta(charset="utf8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Karla")
+        link(rel="stylesheet", href="/perrymitchell.css")
+        link(rel="icon", href="/favicon.png")
+        block head
+        block title
+            title PerryMitchell.net
+
+    body
+        aside.logo
+            a(href=logo_link)
+                img(src="http://www.gravatar.com/avatar/0d08985463cae434f6e272c20cb6b783.png?s=80", class="gravatar")
+            span(class="logo-prompt") Back to home
+        main
+            noscript
+                style.
+                    article .footnotes { display: block; }
+            block body
+
+    footer.footer
+        span.block &copy; Perry Mitchell
+        script(type="text/javascript").
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-42126066-1', 'auto');
+            ga('send', 'pageview');
+            
