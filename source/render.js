@@ -9,6 +9,8 @@ const mkdir = require("mkdirp").sync;
 const sass = require("node-sass");
 const autoprefixer = require("autoprefixer");
 const postcss = require("postcss");
+const striptags = require("striptags");
+const entities = require("html-entities").XmlEntities;
 
 const config = require("./config.js");
 
@@ -47,6 +49,12 @@ marked.setOptions({
 function beautifyDateStr(dateStr) {
     let date = new Date(dateStr);
     return `${MONTHS[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`;
+}
+
+function getDescription(html) {
+    let text = striptags(html),
+        words = text.split(/\s+/g);
+    return entities.decode(words.slice(0, 50).join(" ")) + "...";
 }
 
 function sortPosts(years) {
@@ -137,7 +145,7 @@ let render = module.exports = {
                 date: beautifyDateStr(properties.date),
                 content: content,
                 logo_link: config.baseURL,
-                description: properties.description || ""
+                description: properties.description || getDescription(content)
             });
             fs.writeFile(outputFilename, html, "utf8", function(err) {
                 if (err) {

@@ -4,6 +4,7 @@ tags:
  - rant
 categories:
  - Work
+description: Cowboy developers have a poor work ethic and a very negative impact on the company - this is made worse when management are too blind to see the impact and use the cowboy as a sidechannel to get lesser-quality work done.
 ---
 
 I don't mind sometimes being that guy who swoops in and fixes some issue to look like today's hero - Every developer needs that opportunity. I think it's important to maintain some level of composure throughout this process, however, and workplace/QA processes should still be adhered to no matter how dire the situation is that you're trying to fix. Taking the time to do things right is imperative to organisational stability and developer behaviour - **Why should others respect you if you don't respect your work?**
