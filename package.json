@@ -11,7 +11,8 @@
     "start": "ENVIRONMENT=development npm run build && npm run serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Perry Mitchell <perry@kiosked.com>",
+  "private": true,
   "license": "UNLICENSED",
   "devDependencies": {
     "autoprefixer": "^6.5.3",
