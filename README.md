@@ -6,6 +6,9 @@ My website uses a custom build procedure to generate a **static blog** from mark
 
 My blog has had a long history - originally Wordpress, then migrated to Hexo. I even tried building it again inside of Jekyll. There is legacy data in the front matter properties as well as a huge `wp-content` directory left over from Wordpress (full of images).
 
+### Hexo
+The posts in this repo were taken directly from my previous [Hexo](https://hexo.io/) blog. If you're migrating, posts from Hexo blogs (and most likely Jekyll as well) should work without change in this configuration.
+
 ## Building
 You can start playing with the blog locally by running `npm run start` - This will build the blog and then serve it locally on port 4000.
 
