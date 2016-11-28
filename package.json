@@ -5,7 +5,7 @@
   "main": "source/index.js",
   "scripts": {
     "build": "node source/index.js",
-    "clean": "rimraf ./deploy.zip",
+    "clean": "rimraf ./deploy.zip && rimraf build",
     "deploy": "fly production",
     "serve": "serve ./build -p 4000",
     "start": "ENVIRONMENT=development npm run build && npm run serve",
