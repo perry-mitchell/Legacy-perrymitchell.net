@@ -6,7 +6,7 @@
   "scripts": {
     "build": "node source/index.js",
     "clean": "rimraf ./deploy.zip && rimraf build",
-    "deploy": "fly production",
+    "deploy": "npm run clean && npm run build && fly production",
     "serve": "serve ./build -p 4000",
     "start": "ENVIRONMENT=development npm run build && npm run serve",
     "test": "echo \"Error: no test specified\" && exit 1"
